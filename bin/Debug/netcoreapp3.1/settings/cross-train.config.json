@@ -1,0 +1,8 @@
+{
+  "LanitChatBot.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "Cancel": ""
+    }
+  }
+}

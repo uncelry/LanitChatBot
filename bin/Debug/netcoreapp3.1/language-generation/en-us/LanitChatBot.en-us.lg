@@ -1,0 +1,19 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = Извините, не понял вас
+]
+
+# SendActivity_Greeting_text()
+- ```Здравствуйте!
+Я \- чат\-бот компании Ланит. Помогу найти ответ на ваш вопрос.```
+# SendActivity_60ZLsj()
+[Activity
+    Text = Понял, отменяю!
+]
