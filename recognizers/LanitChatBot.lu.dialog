@@ -1,5 +1,8 @@
 {
   "$kind": "Microsoft.MultiLanguageRecognizer",
   "id": "LUIS_LanitChatBot",
-  "recognizers": {}
+  "recognizers": {
+    "en-us": "LanitChatBot.en-us.lu",
+    "": "LanitChatBot.en-us.lu"
+  }
 }

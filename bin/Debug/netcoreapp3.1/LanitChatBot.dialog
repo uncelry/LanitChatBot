@@ -31,6 +31,14 @@
               "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
               "actions": [
                 {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "Hrwpxi"
+                  },
+                  "property": "user.onProcess",
+                  "value": " 0"
+                },
+                {
                   "$kind": "Microsoft.SendActivity",
                   "$designer": {
                     "id": "859266",
@@ -40,7 +48,9 @@
                 }
               ]
             }
-          ]
+          ],
+          "value": "dialog.foreach.value",
+          "index": "dialog.foreach.index"
         }
       ]
     },
@@ -62,23 +72,50 @@
     {
       "$kind": "Microsoft.OnIntent",
       "$designer": {
-        "id": "BjG3AW",
-        "name": "Cancel"
+        "id": "lbfOyG",
+        "name": "KobaltInfo"
       },
-      "intent": "Cancel",
+      "intent": "KobaltInfo",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "OHOneK"
+          },
+          "dialog": "ProductKobalt",
+          "activityProcessed": false
+        }
+      ],
+      "condition": "=#KobaltInfo.Score >= 0.6"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "QYGvPO",
+        "name": "WorkingHours"
+      },
+      "intent": "WorkingHours",
       "actions": [
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "60ZLsj"
+            "id": "8v8sF8"
           },
-          "activity": "${SendActivity_60ZLsj()}"
+          "activity": "${SendActivity_8v8sF8()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "vrnPkI"
+          },
+          "property": "user.Process",
+          "value": "0"
         }
-      ],
-      "condition": "=#Cancel.Score >= 0.8"
+      ]
     }
   ],
   "generator": "LanitChatBot.lg",
   "id": "LanitChatBot",
-  "recognizer": "LanitChatBot.lu.qna"
+  "recognizer": "LanitChatBot.lu.qna",
+  "dialogs": []
 }

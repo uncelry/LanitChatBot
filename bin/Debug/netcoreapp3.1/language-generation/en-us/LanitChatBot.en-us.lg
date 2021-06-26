@@ -7,13 +7,17 @@
 
 # SendActivity_DidNotUnderstand()
 [Activity
-    Text = Извините, не понял вас
+    Text = ${SendActivity_DidNotUnderstand_text()}
 ]
 
 # SendActivity_Greeting_text()
 - ```Здравствуйте!
 Я \- чат\-бот компании Ланит. Помогу найти ответ на ваш вопрос.```
-# SendActivity_60ZLsj()
+# SendActivity_8v8sF8()
 [Activity
-    Text = Понял, отменяю!
+    Text = 00:00 - 23:59
 ]
+
+# SendActivity_DidNotUnderstand_text()
+- ```Извините, не понял вас. Попробуйте переформулировать свой вопрос.
+Если ```

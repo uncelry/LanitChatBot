@@ -1,7 +1,10 @@
 {
     "luis": {
         "LanitChatBot_en_us_lu": {
-            "appId": "604d6c5c-99a4-408b-8d64-fce86c84a67e"
+            "appId": "b68254ac-8f9e-4a17-858a-bfd157557b72"
+        },
+        "ProductKobalt_en_us_lu": {
+            "appId": "720f3382-0233-4f2e-9d69-688dfbc6596c"
         }
     }
 }
