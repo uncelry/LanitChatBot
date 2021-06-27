@@ -5,10 +5,50 @@
       "KobaltInfo": [
         "ProductKobalt.en-us"
       ],
-      "WorkingHours": ""
+      "WorkingHours": "",
+      "AvroraInfo": [
+        "ProductAvrora.en-us"
+      ],
+      "LogosInfo": [
+        "ProductLogos.en-us"
+      ]
+    }
+  },
+  "ProductAvrora.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "Info": "",
+      "": [
+        "LanitChatBot.en-us"
+      ],
+      "Functions": "",
+      "Price": "",
+      "Buy": "",
+      "Trial": "",
+      "Docs": "",
+      "Site": "",
+      "Benefits": "",
+      "License": ""
     }
   },
   "ProductKobalt.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "Info": "",
+      "": [
+        "LanitChatBot.en-us"
+      ],
+      "Functions": "",
+      "Price": "",
+      "Buy": "",
+      "Trial": "",
+      "Docs": "",
+      "Site": "",
+      "Benefits": "",
+      "License": ""
+    }
+  },
+  "ProductLogos.en-us": {
     "rootDialog": false,
     "triggers": {
       "Info": "",

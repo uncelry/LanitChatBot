@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_ProductLogos",
+  "recognizers": {
+    "en-us": "ProductLogos.en-us.lu",
+    "": "ProductLogos.en-us.lu"
+  }
+}

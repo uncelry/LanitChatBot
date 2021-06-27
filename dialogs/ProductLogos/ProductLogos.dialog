@@ -1,0 +1,327 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Lj0s1u",
+    "name": "ProductLogos",
+    "description": ""
+  },
+  "autoEndDialog": false,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "YZPtlY",
+        "name": "Info"
+      },
+      "intent": "Info",
+      "condition": "=#Info.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Qsl8cQ"
+          },
+          "activity": "${SendActivity_Qsl8cQ()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "taPro7"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "EsNvhP"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "GTfZBo"
+          },
+          "condition": "=user.onProcess != 0",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "ld45nq"
+              },
+              "property": "user.onProcess",
+              "value": "1"
+            },
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "XtUPHN"
+              },
+              "activityProcessed": false,
+              "dialog": "LanitChatBot"
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "TnW6nQ"
+              },
+              "activity": "${SendActivity_TnW6nQ()}"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "1L2qg9"
+              },
+              "property": "user.onProcess",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "yr2Avj",
+        "name": "Functions"
+      },
+      "intent": "Functions",
+      "condition": "=#Functions.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "n20i4G"
+          },
+          "activity": "${SendActivity_n20i4G()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "JBeQVj"
+          },
+          "activity": "${SendActivity_JBeQVj()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "avxh7M"
+          },
+          "activity": "${SendActivity_avxh7M()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "tD2VXg"
+          },
+          "activity": "${SendActivity_tD2VXg()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "0alsLE"
+          },
+          "activity": "${SendActivity_0alsLE()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "EyE5xf"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "kSvDm1",
+        "name": "Price"
+      },
+      "intent": "Price",
+      "condition": "=#Price.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "pBc3O8"
+          },
+          "activity": "${SendActivity_pBc3O8()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "M5s1Pp"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "WikmNo",
+        "name": "Buy"
+      },
+      "intent": "Buy",
+      "condition": "=#Buy.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "mzN8qF"
+          },
+          "activity": "${SendActivity_mzN8qF()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "q9fLcJ"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "0qMcaU",
+        "name": "Trial"
+      },
+      "intent": "Trial",
+      "condition": "=#Trial.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "8mUMZ8"
+          },
+          "activity": "${SendActivity_8mUMZ8()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "kRmZgX"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "wF8GiI",
+        "name": "Docs"
+      },
+      "intent": "Docs",
+      "condition": "=#Docs.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "D0OpUe"
+          },
+          "activity": "${SendActivity_D0OpUe()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "8lEV71"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "UCfu9L",
+        "name": "Site"
+      },
+      "intent": "Site",
+      "condition": "=#Site.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "M6pSVm"
+          },
+          "activity": "${SendActivity_M6pSVm()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "rouvo5"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "5VrkjG",
+        "name": "Benefits"
+      },
+      "intent": "Benefits",
+      "condition": "=#Benefits.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "s3ZP0k"
+          },
+          "activity": "${SendActivity_s3ZP0k()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "iCImE5"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "PGrH3R",
+        "name": "License"
+      },
+      "intent": "License",
+      "condition": "=#License.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "VtVjSl"
+          },
+          "activity": "${SendActivity_VtVjSl()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "wlSQCz"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "generator": "ProductLogos.lg",
+  "recognizer": "ProductLogos.lu.qna",
+  "id": "ProductLogos"
+}

@@ -112,6 +112,44 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Y7cflb",
+        "name": "AvroraInfo"
+      },
+      "intent": "AvroraInfo",
+      "condition": "=#AvroraInfo.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "mfwaYQ"
+          },
+          "activityProcessed": false,
+          "dialog": "ProductAvrora"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "tn5Qmd",
+        "name": "LogosInfo"
+      },
+      "intent": "LogosInfo",
+      "condition": "=#LogosInfo.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "YPEbyn"
+          },
+          "activityProcessed": false,
+          "dialog": "ProductLogos"
+        }
+      ]
     }
   ],
   "generator": "LanitChatBot.lg",

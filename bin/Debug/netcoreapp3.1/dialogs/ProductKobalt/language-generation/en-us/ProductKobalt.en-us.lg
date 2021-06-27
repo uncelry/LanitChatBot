@@ -32,7 +32,7 @@
 
 # SendActivity_Itce86()
 [Activity
-    Text = Извините, не понял вас
+    Text = ${SendActivity_Itce86_text()}
 ]
 
 # SendActivity_uBctg2()
@@ -127,3 +127,7 @@
 [Activity
     Text = ${SendActivity_g1ZX22_text()}
 ]
+
+# SendActivity_Itce86_text()
+- ```Извините, не понял вас. Попробуйте переформулировать свой вопрос.
+Если это не поможет, обратитесь в службу поддержки.```
