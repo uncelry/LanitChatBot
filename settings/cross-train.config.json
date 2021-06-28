@@ -5,13 +5,32 @@
       "KobaltInfo": [
         "ProductKobalt.en-us"
       ],
-      "WorkingHours": "",
       "AvroraInfo": [
         "ProductAvrora.en-us"
       ],
       "LogosInfo": [
         "ProductLogos.en-us"
+      ],
+      "AsterInfo": [
+        "ProductAster.en-us"
       ]
+    }
+  },
+  "ProductAster.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "Info": "",
+      "": [
+        "LanitChatBot.en-us"
+      ],
+      "Functions": "",
+      "Price": "",
+      "Buy": "",
+      "Trial": "",
+      "Docs": "",
+      "Site": "",
+      "Benefits": "",
+      "License": ""
     }
   },
   "ProductAvrora.en-us": {

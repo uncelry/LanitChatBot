@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_ProductAster",
+  "recognizers": {
+    "en-us": "ProductAster.en-us.lu",
+    "": "ProductAster.en-us.lu"
+  }
+}

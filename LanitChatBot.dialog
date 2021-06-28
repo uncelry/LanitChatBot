@@ -91,31 +91,6 @@
     {
       "$kind": "Microsoft.OnIntent",
       "$designer": {
-        "id": "QYGvPO",
-        "name": "WorkingHours"
-      },
-      "intent": "WorkingHours",
-      "actions": [
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "8v8sF8"
-          },
-          "activity": "${SendActivity_8v8sF8()}"
-        },
-        {
-          "$kind": "Microsoft.SetProperty",
-          "$designer": {
-            "id": "vrnPkI"
-          },
-          "property": "user.Process",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "$kind": "Microsoft.OnIntent",
-      "$designer": {
         "id": "Y7cflb",
         "name": "AvroraInfo"
       },
@@ -148,6 +123,25 @@
           },
           "activityProcessed": false,
           "dialog": "ProductLogos"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Z3jGix",
+        "name": "AsterInfo"
+      },
+      "intent": "AsterInfo",
+      "condition": "=#AsterInfo.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "8kTmY8"
+          },
+          "activityProcessed": false,
+          "dialog": "ProductAster"
         }
       ]
     }
