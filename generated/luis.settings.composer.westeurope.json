@@ -1,16 +1,16 @@
 {
     "luis": {
-        "LanitChatBot_en_us_lu": {
-            "appId": "b68254ac-8f9e-4a17-858a-bfd157557b72"
-        },
-        "ProductLogos_en_us_lu": {
-            "appId": "eb5cc975-22b4-430a-831c-6a571cf2741d"
+        "ProductAster_en_us_lu": {
+            "appId": "8bc6ddb5-d0f1-4488-910c-8530992076a6"
         },
         "ProductAvrora_en_us_lu": {
             "appId": "1199e74e-f75c-4e20-b923-d0be89aaeec1"
         },
-        "ProductAster_en_us_lu": {
-            "appId": "8bc6ddb5-d0f1-4488-910c-8530992076a6"
+        "ProductLogos_en_us_lu": {
+            "appId": "eb5cc975-22b4-430a-831c-6a571cf2741d"
+        },
+        "LanitChatBot_en_us_lu": {
+            "appId": "b68254ac-8f9e-4a17-858a-bfd157557b72"
         },
         "ProductKobalt_en_us_lu": {
             "appId": "720f3382-0233-4f2e-9d69-688dfbc6596c"

@@ -144,6 +144,162 @@
           "dialog": "ProductAster"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "woGDTy",
+        "name": "CompanyAbout"
+      },
+      "intent": "CompanyAbout",
+      "condition": "=#CompanyAbout.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "i1GmZZ"
+          },
+          "activity": "${SendActivity_i1GmZZ()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "QnJvNT"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "zjaZKx",
+        "name": "CompanyOffice"
+      },
+      "intent": "CompanyOffice",
+      "condition": "=#CompanyOffice.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "i4UTLN"
+          },
+          "activity": "${SendActivity_i4UTLN()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "G1tTl9"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "CScOJt",
+        "name": "CompanyTime"
+      },
+      "intent": "CompanyTime",
+      "condition": "=#CompanyTime.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Ieaxrs"
+          },
+          "activity": "${SendActivity_Ieaxrs()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "7rRUOD"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "OOiykS",
+        "name": "CompanySite"
+      },
+      "intent": "CompanySite",
+      "condition": "=#CompanySite.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Zv422u"
+          },
+          "activity": "${SendActivity_Zv422u()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "uzQ0z2"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "sRDWVz",
+        "name": "CompanySupport"
+      },
+      "intent": "CompanySupport",
+      "condition": "=#CompanySupport.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "a5bNJc"
+          },
+          "activity": "${SendActivity_a5bNJc()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "8g0CSu"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "1kFyPK",
+        "name": "CompanyCareer"
+      },
+      "intent": "CompanyCareer",
+      "condition": "=#CompanyCareer.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "PazqlO"
+          },
+          "activity": "${SendActivity_PazqlO()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "X4Dfh2"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
     }
   ],
   "generator": "LanitChatBot.lg",
