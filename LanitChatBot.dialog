@@ -300,6 +300,58 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "H8n8x7",
+        "name": "CompanyActivities"
+      },
+      "intent": "CompanyActivities",
+      "condition": "=#CompanyActivities.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "qP4g05"
+          },
+          "activity": "${SendActivity_qP4g05()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "Dz7UFv"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "ls9d90",
+        "name": "CompanyEvents"
+      },
+      "intent": "CompanyEvents",
+      "condition": "=#CompanyEvents.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "ex9rN7"
+          },
+          "activity": "${SendActivity_ex9rN7()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "LW65Oc"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
     }
   ],
   "generator": "LanitChatBot.lg",
