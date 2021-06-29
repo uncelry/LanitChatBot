@@ -13,7 +13,15 @@
       ],
       "AsterInfo": [
         "ProductAster.en-us"
-      ]
+      ],
+      "CompanyAbout": "",
+      "CompanyOffice": "",
+      "CompanyTime": "",
+      "CompanySite": "",
+      "CompanySupport": "",
+      "CompanyCareer": "",
+      "CompanyActivities": "",
+      "CompanyEvents": ""
     }
   },
   "ProductAster.en-us": {

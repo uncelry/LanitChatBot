@@ -38,7 +38,8 @@
       "Docs": "",
       "Site": "",
       "Benefits": "",
-      "License": ""
+      "License": "",
+      "OS": ""
     }
   },
   "ProductAvrora.en-us": {
@@ -55,7 +56,8 @@
       "Docs": "",
       "Site": "",
       "Benefits": "",
-      "License": ""
+      "License": "",
+      "OS": ""
     }
   },
   "ProductKobalt.en-us": {
@@ -72,7 +74,9 @@
       "Docs": "",
       "Site": "",
       "Benefits": "",
-      "License": ""
+      "License": "",
+      "OS": "",
+      "Registry": ""
     }
   },
   "ProductLogos.en-us": {
@@ -89,7 +93,11 @@
       "Docs": "",
       "Site": "",
       "Benefits": "",
-      "License": ""
+      "License": "",
+      "OS": "",
+      "Registry": "",
+      "Cources": "",
+      "DataFormats": ""
     }
   }
 }

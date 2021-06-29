@@ -319,6 +319,32 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "wLRalY",
+        "name": "OS"
+      },
+      "intent": "OS",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "FP20mB"
+          },
+          "activity": "${SendActivity_FP20mB()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "JPMsn0"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ],
+      "condition": "=#OS.Score >= 0.6"
     }
   ],
   "generator": "ProductAvrora.lg",

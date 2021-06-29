@@ -319,6 +319,32 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "V6a90W",
+        "name": "OS"
+      },
+      "intent": "OS",
+      "condition": "=#OS.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "rghKY0"
+          },
+          "activity": "${SendActivity_rghKY0()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "J96Uh5"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
     }
   ],
   "generator": "ProductAster.lg",
