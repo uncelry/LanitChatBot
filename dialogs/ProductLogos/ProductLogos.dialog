@@ -444,6 +444,32 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "e9LpVq",
+        "name": "HowItWorks"
+      },
+      "intent": "HowItWorks",
+      "condition": "=#HowItWorks.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "iRHKsQ"
+          },
+          "activity": "${SendActivity_iRHKsQ()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "UfUyo5"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
     }
   ],
   "generator": "ProductLogos.lg",

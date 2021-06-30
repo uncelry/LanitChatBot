@@ -385,6 +385,32 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "4HUPNG",
+        "name": "HowItWorks"
+      },
+      "intent": "HowItWorks",
+      "condition": "=#HowItWorks.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "D5IS2t"
+          },
+          "activity": "${SendActivity_D5IS2t()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "DrnBHg"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
     }
   ],
   "generator": "ProductKobalt.lg",
