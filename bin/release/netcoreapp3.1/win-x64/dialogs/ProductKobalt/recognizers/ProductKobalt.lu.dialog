@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_ProductKobalt",
+  "recognizers": {
+    "en-us": "ProductKobalt.en-us.lu",
+    "": "ProductKobalt.en-us.lu"
+  }
+}

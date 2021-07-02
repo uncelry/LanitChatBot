@@ -319,6 +319,84 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "V6a90W",
+        "name": "OS"
+      },
+      "intent": "OS",
+      "condition": "=#OS.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "rghKY0"
+          },
+          "activity": "${SendActivity_rghKY0()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "J96Uh5"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "2oqLYJ",
+        "name": "HowItWorks"
+      },
+      "intent": "HowItWorks",
+      "condition": "=#HowItWorks.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "fE10uA"
+          },
+          "activity": "${SendActivity_fE10uA()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "MoLKYq"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "LvbgwE",
+        "name": "Registry"
+      },
+      "intent": "Registry",
+      "condition": "=#Registry.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "D3Am0F"
+          },
+          "activity": "${SendActivity_D3Am0F()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "xLIs4V"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
     }
   ],
   "generator": "ProductAster.lg",

@@ -17,7 +17,7 @@
         {
           "$kind": "Microsoft.Foreach",
           "$designer": {
-            "id": "518944",
+            "id": "iEA3Dz",
             "name": "Loop: for each item"
           },
           "itemsProperty": "turn.Activity.membersAdded",
@@ -25,7 +25,7 @@
             {
               "$kind": "Microsoft.IfCondition",
               "$designer": {
-                "id": "641773",
+                "id": "OQJB7X",
                 "name": "Branch: if/else"
               },
               "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
@@ -33,7 +33,7 @@
                 {
                   "$kind": "Microsoft.SetProperty",
                   "$designer": {
-                    "id": "Hrwpxi"
+                    "id": "ywr80Q"
                   },
                   "property": "user.onProcess",
                   "value": " 0"
@@ -41,10 +41,10 @@
                 {
                   "$kind": "Microsoft.SendActivity",
                   "$designer": {
-                    "id": "859266",
+                    "id": "84l753",
                     "name": "Send a response"
                   },
-                  "activity": "${SendActivity_Greeting()}"
+                  "activity": "${SendActivity_84l753()}"
                 }
               ]
             }
@@ -350,6 +350,32 @@
           },
           "property": "user.Process",
           "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "pGW6qC",
+        "name": "Start"
+      },
+      "intent": "Start",
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "PvmI0N"
+          },
+          "property": "user.onProcess",
+          "value": " 0"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "CC2TYj",
+            "name": "Send a response"
+          },
+          "activity": "${SendActivity_CC2TYj()}"
         }
       ]
     }

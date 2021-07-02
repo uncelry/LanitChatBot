@@ -1,0 +1,15 @@
+{
+  "profileName": "LanitBot",
+  "jobId": "3e4a5eeb-c9b6-4b7c-98e5-930a07866202",
+  "projectId": "76888.57802727536",
+  "time": "2021-06-30T22:30:26.526Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Use the Resource Group: LanitBotFinal_1 at northeurope",
+    "Deploying Blob Storage Resource ...",
+    "Deploying Luis Authoring Resource ...",
+    "Deploying Luis Resource ...",
+    "Provisioning completed successfully!"
+  ]
+}

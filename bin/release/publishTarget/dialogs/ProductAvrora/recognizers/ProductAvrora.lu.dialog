@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_ProductAvrora",
+  "recognizers": {
+    "en-us": "ProductAvrora.en-us.lu",
+    "": "ProductAvrora.en-us.lu"
+  }
+}

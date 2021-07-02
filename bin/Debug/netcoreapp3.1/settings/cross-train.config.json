@@ -21,7 +21,8 @@
       "CompanySupport": "",
       "CompanyCareer": "",
       "CompanyActivities": "",
-      "CompanyEvents": ""
+      "CompanyEvents": "",
+      "Start": ""
     }
   },
   "ProductAster.en-us": {
@@ -38,7 +39,10 @@
       "Docs": "",
       "Site": "",
       "Benefits": "",
-      "License": ""
+      "License": "",
+      "OS": "",
+      "HowItWorks": "",
+      "Registry": ""
     }
   },
   "ProductAvrora.en-us": {
@@ -55,7 +59,10 @@
       "Docs": "",
       "Site": "",
       "Benefits": "",
-      "License": ""
+      "License": "",
+      "OS": "",
+      "HowItWorks": "",
+      "Registry": ""
     }
   },
   "ProductKobalt.en-us": {
@@ -72,7 +79,10 @@
       "Docs": "",
       "Site": "",
       "Benefits": "",
-      "License": ""
+      "License": "",
+      "OS": "",
+      "Registry": "",
+      "HowItWorks": ""
     }
   },
   "ProductLogos.en-us": {
@@ -89,7 +99,12 @@
       "Docs": "",
       "Site": "",
       "Benefits": "",
-      "License": ""
+      "License": "",
+      "OS": "",
+      "Registry": "",
+      "Cources": "",
+      "DataFormats": "",
+      "HowItWorks": ""
     }
   }
 }
