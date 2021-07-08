@@ -25,6 +25,13 @@
           "activity": "${SendActivity_Qsl8cQ()}"
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "yuNUgU"
+          },
+          "activity": "${SendActivity_yuNUgU()}"
+        },
+        {
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "taPro7"

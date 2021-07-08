@@ -25,6 +25,13 @@
           "activity": "${SendActivity_HWw2wW()}"
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "tLZilc"
+          },
+          "activity": "${SendActivity_tLZilc()}"
+        },
+        {
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "XDjSpb"

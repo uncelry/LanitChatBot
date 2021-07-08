@@ -25,27 +25,6 @@
           "activity": "${SendActivity_hemOVV()}"
         },
         {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "r4QUHb"
-          },
-          "activity": "${SendActivity_r4QUHb()}"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "uNS7Wt"
-          },
-          "activity": "${SendActivity_uNS7Wt()}"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "8BT9pF"
-          },
-          "activity": "${SendActivity_8BT9pF()}"
-        },
-        {
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "1kEbPu"
@@ -174,13 +153,6 @@
             "id": "hS18HE"
           },
           "activity": "${SendActivity_hS18HE()}"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "PKzZm0"
-          },
-          "activity": "${SendActivity_PKzZm0()}"
         },
         {
           "$kind": "Microsoft.SetProperty",

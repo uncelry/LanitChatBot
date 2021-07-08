@@ -46,6 +46,13 @@
           "activity": "${SendActivity_8BT9pF()}"
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "RTICTC"
+          },
+          "activity": "${SendActivity_RTICTC()}"
+        },
+        {
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "1kEbPu"
@@ -92,6 +99,13 @@
                 "id": "CBFHv7"
               },
               "activity": "${SendActivity_CBFHv7()}"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "NQ97Pl"
+              },
+              "activity": "${SendActivity_NQ97Pl()}"
             },
             {
               "$kind": "Microsoft.SetProperty",

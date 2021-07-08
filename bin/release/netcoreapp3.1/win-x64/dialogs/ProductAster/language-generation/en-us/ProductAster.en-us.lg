@@ -7,7 +7,7 @@
 
 # SendActivity_CBFHv7()
 [Activity
-    Text = Извините, не понял вас. Попробуйте переформулировать свой вопрос - оставьте только ключевые слова. Если это не поможет, вы можете задать свой вопрос по телефону +7 (495) 909-21-65
+    Text = Извините, не понял вас. Попробуйте переформулировать свой вопрос - оставьте только ключевые слова. \n\nЕсли это не поможет, вы можете задать свой вопрос по телефону +7 (495) 909-21-65 АСТЕР
 ]
 
 # SendActivity_OqH4lL()
@@ -65,7 +65,7 @@
 
 # SendActivity_9M3YcI()
 [Activity
-    Text = Преимущества Астера: 1) Повышение безопасности трудовой деятельности 2) Предотвращение несчастных случаев и травм на производстве 3) Постоянный контроль перемещений персонала дежурной смены 4) Автоматическое оповещение в случае нахождении персонала в опасной зоне 5) Повышение эффективности труда, трудовой дисциплины и качества работ 6) Получение маршрута движения персонала 7) Высокая точность определения координат
+    Text = Преимущества Астера: \n\n1) Повышение безопасности трудовой деятельности \n\n2) Предотвращение несчастных случаев и травм на производстве \n\n3) Постоянный контроль перемещений персонала дежурной смены \n\n4) Автоматическое оповещение в случае нахождении персонала в опасной зоне \n\n5) Повышение эффективности труда, трудовой дисциплины и качества работ \n\n6) Получение маршрута движения персонала \n\n7) Высокая точность определения координат
 ]
 
 # SendActivity_9DMNC1()
@@ -76,12 +76,12 @@
 
 # SendActivity_rghKY0()
 [Activity
-    Text = Программный комплекс Астер предусмотрен для функционирования на: 1) Носимых устройствах: Android телефоны. Степень защищенности и автономность подбираются в зависимости от потребностей заказчика  2) Сервере: размещается в облаке или на локальном сервере заказчика (Windows, Linux)
+    Text = Программный комплекс Астер предусмотрен для функционирования на: \n\n1) Носимых устройствах: Android телефоны. Степень защищенности и автономность подбираются в зависимости от потребностей заказчика  \n\n2) Сервере: размещается в облаке или на локальном сервере заказчика (Windows, Linux)
 ]
 
 # SendActivity_fE10uA()
 [Activity
-    Text = 1) Оператор видит каждого работника на плане предприятия 2) По всему предприятию располагаются Bluetooth-метки 3) Каждому сотруднику выдается мобильное устройство "Астер" 4) Мобильное устройство регистрирует сигнал от ближайших меток 5) На открытом пространстве работник отслеживается по GPS 6) Данные со всех устройств передаются на сервер в Веб-панель "Астер"
+    Text = 1) Оператор видит каждого работника на плане предприятия \n\n2) По всему предприятию располагаются Bluetooth-метки \n\n3) Каждому сотруднику выдается мобильное устройство "Астер" \n\n4) Мобильное устройство регистрирует сигнал от ближайших меток \n\n5) На открытом пространстве работник отслеживается по GPS \n\n6) Данные со всех устройств передаются на сервер в Веб-панель "Астер"
 ]
 
 # SendActivity_ZBIxBu_text()
@@ -116,4 +116,67 @@
 # SendActivity_PKzZm0()
 [Activity
     Text = Для уточнения актуальных цен свяжитесь с нами по телефону +7 (495) 909-21-65, либо по почте aster@lanit.ru, или оставьте заявку на сайте и мы Вам перезвоним https://aster.lanit.ru/Ru#price.
+]
+
+# SendActivity_RTICTC()
+[Activity
+    Text = Если вас заинтересовал этот продукт, и вы хотите узнать о нем больше - задайте мне вопрос о его функционале или преимуществах
+]
+
+# SendActivity_NQ97Pl_attachment_9hAB0Q()
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "type": "AdaptiveCard",
+  "body": [""],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "url": "http://adaptivecards.io",
+      "title": "Позвоните нам"
+    }
+  ],
+  "backgroundImage": ""
+}```
+# SendActivity_NQ97Pl()
+[Activity
+    Attachments = ${json(SendActivity_NQ97Pl_attachment_9hAB0Q())} | ${json(SendActivity_NQ97Pl_attachment_6ha7Av())} | ${json(SendActivity_NQ97Pl_attachment_0EtU4z())} | ${json(SendActivity_NQ97Pl_attachment_rqvD7U())}
+    AttachmentLayout = list
+]
+
+# SendActivity_NQ97Pl_attachment_6ha7Av()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "url": "http://adaptivecards.io",
+      "title": "Напишите нам"
+    }
+  ]
+}```
+# SendActivity_NQ97Pl_attachment_0EtU4z()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "url": "http://adaptivecards.io",
+      "title": "Оставьте заявку"
+    }
+  ]
+}```
+# SendActivity_NQ97Pl_attachment_rqvD7U()
+[HeroCard
+  buttons = "First", "Second"
 ]

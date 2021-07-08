@@ -24,6 +24,13 @@
           "activity": "${SendActivity_WK9BaD()}"
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "BJXB9Y"
+          },
+          "activity": "${SendActivity_BJXB9Y()}"
+        },
+        {
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "thgAY9"
@@ -99,6 +106,55 @@
             "id": "DOUOxT"
           },
           "activity": "${SendActivity_DOUOxT()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "zK5NUL"
+          },
+          "activity": "${SendActivity_zK5NUL()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "2HhQsP"
+          },
+          "activity": "${SendActivity_2HhQsP()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "6RrpX2"
+          },
+          "activity": "${SendActivity_6RrpX2()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "uZWSr9"
+          },
+          "activity": "${SendActivity_uZWSr9()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "cy4KW3"
+          },
+          "activity": "${SendActivity_cy4KW3()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "catJ8N"
+          },
+          "activity": "${SendActivity_catJ8N()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "uix0ln"
+          },
+          "activity": "${SendActivity_uix0ln()}"
         },
         {
           "$kind": "Microsoft.SetProperty",

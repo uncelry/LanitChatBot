@@ -25,6 +25,13 @@
           "activity": "${SendActivity_HWw2wW()}"
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "tLZilc"
+          },
+          "activity": "${SendActivity_tLZilc()}"
+        },
+        {
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "XDjSpb"
@@ -152,6 +159,13 @@
             "id": "fjSnX7"
           },
           "activity": "${SendActivity_fjSnX7()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "7pBH7q"
+          },
+          "activity": "${SendActivity_7pBH7q()}"
         },
         {
           "$kind": "Microsoft.SetProperty",
