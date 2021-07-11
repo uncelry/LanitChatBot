@@ -90,9 +90,9 @@
             {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "X7tx5K"
+                "id": "kd0yAD"
               },
-              "activity": "${SendActivity_X7tx5K()}"
+              "activity": "${SendActivity_kd0yAD()}"
             },
             {
               "$kind": "Microsoft.SetProperty",

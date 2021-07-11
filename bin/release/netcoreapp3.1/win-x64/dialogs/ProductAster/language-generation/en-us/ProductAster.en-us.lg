@@ -136,12 +136,27 @@
     Text = На предприятии произошла авария. Как определить, кто из работников мог пострадать?
 ]
 
-# SendActivity_1n0Dc1_attachment_xrWjKn()
+
+# SendActivity_KROZU5_attachment_xrWjKn()
 [HeroCard
   text = Если это не поможет, вы можете задать свой вопрос техподдержке позвонив по телефону, написав на почту или оставив заявку
-  buttons = Позвонить | Написать | Заявка
+  buttons = ${cardActionTemplate( 'imBack',  'Позвонить', '/call')} | ${cardActionTemplate( 'imBack',  'Написать', '/mail')} | ${cardActionTemplate( 'imBack',  'Заявка', '/request')}
 ]
-# SendActivity_1n0Dc1()
+# SendActivity_KROZU5()
 [Activity
-    Attachments = ${json(SendActivity_1n0Dc1_attachment_xrWjKn())}
+    Attachments = ${json(SendActivity_KROZU5_attachment_xrWjKn())}
 ]
+
+# herocard
+[HeroCard
+  text = Какие решения вас интересуют?
+  buttons = ${cardActionTemplate( 'imBack',  'click me', 'click me intent' )}
+]
+
+# cardActionTemplate( type,  title, value)
+[CardAction
+    Types = ${if(type == null, 'imBack', type)}
+    Title = ${title}
+    Value = ${value}
+    Text = ${value}
+]  

@@ -3063,15 +3063,15 @@
 
 
 # CallMe
-- Позвонить
+- /call
 
 
 # WriteMe
-- Написать
+- /mail
 
 
 # RequestMe
-- Заявка
+- /request
 
 
 # DIBLanit
@@ -3531,6 +3531,18 @@
 
 # Cancel
 - /cancel
+
+
+# Menu
+- /menu
+
+
+# MenuSolutions
+- /solutions
+
+
+# MenuSupport
+- /support
 
 
 > # Entity definitions

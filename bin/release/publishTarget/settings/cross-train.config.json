@@ -43,7 +43,10 @@
       "HaveLicense": "",
       "SupportOnGo": "",
       "RegionalClient": "",
-      "Cancel": ""
+      "Cancel": "",
+      "Menu": "",
+      "MenuSolutions": "",
+      "MenuSupport": ""
     }
   },
   "ProductAster.en-us": {

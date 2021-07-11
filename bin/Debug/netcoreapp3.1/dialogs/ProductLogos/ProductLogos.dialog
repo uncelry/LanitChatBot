@@ -90,9 +90,9 @@
             {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "iOKnCA"
+                "id": "xuTxPI"
               },
-              "activity": "${SendActivity_iOKnCA()}"
+              "activity": "${SendActivity_xuTxPI()}"
             },
             {
               "$kind": "Microsoft.SetProperty",

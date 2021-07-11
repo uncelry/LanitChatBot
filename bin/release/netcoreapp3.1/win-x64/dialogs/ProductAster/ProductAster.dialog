@@ -104,9 +104,9 @@
             {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "1n0Dc1"
+                "id": "KROZU5"
               },
-              "activity": "${SendActivity_1n0Dc1()}"
+              "activity": "${SendActivity_KROZU5()}"
             },
             {
               "$kind": "Microsoft.SetProperty",

@@ -95,12 +95,27 @@
     Text = Извините, не понял вас. Попробуйте переформулировать свой вопрос - оставьте только ключевые слова.
 ]
 
-# SendActivity_X7tx5K_attachment_xrWjKn()
+
+# SendActivity_kd0yAD_attachment_xrWjKn()
 [HeroCard
   text = Если это не поможет, вы можете задать свой вопрос техподдержке позвонив по телефону, написав на почту или оставив заявку
-  buttons = Позвонить | Написать | Заявка
+  buttons = ${cardActionTemplate( 'imBack',  'Позвонить', '/call')} | ${cardActionTemplate( 'imBack',  'Написать', '/mail')} | ${cardActionTemplate( 'imBack',  'Заявка', '/request')}
 ]
-# SendActivity_X7tx5K()
+# SendActivity_kd0yAD()
 [Activity
-    Attachments = ${json(SendActivity_X7tx5K_attachment_xrWjKn())}
+    Attachments = ${json(SendActivity_kd0yAD_attachment_xrWjKn())}
 ]
+
+# herocard
+[HeroCard
+  text = Какие решения вас интересуют?
+  buttons = ${cardActionTemplate( 'imBack',  'click me', 'click me intent' )}
+]
+
+# cardActionTemplate( type,  title, value)
+[CardAction
+    Types = ${if(type == null, 'imBack', type)}
+    Title = ${title}
+    Value = ${value}
+    Text = ${value}
+]  

@@ -3229,11 +3229,11 @@
 - что вы производите?
 
 # CallMe
-- Позвонить
+- /call
 # WriteMe
-- Написать
+- /mail
 # RequestMe
-- Заявка
+- /request
 # DIBLanit
 - Направление ДИБ компании Ланит
 - Направление департамента информационной безопасности компании Ланит
@@ -3694,3 +3694,11 @@
 
 # Cancel
 - /cancel
+# Menu
+- /menu
+
+# MenuSolutions
+- /solutions
+
+# MenuSupport
+- /support

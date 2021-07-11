@@ -533,42 +533,6 @@
         {
           "$kind": "Microsoft.TextInput",
           "$designer": {
-            "id": "kRhHNy"
-          },
-          "disabled": false,
-          "maxTurnCount": 3,
-          "alwaysPrompt": true,
-          "allowInterruptions": false,
-          "unrecognizedPrompt": "",
-          "prompt": "${TextInput_Prompt_kRhHNy()}",
-          "property": "user.phoneNumber"
-        },
-        {
-          "$kind": "Microsoft.IfCondition",
-          "$designer": {
-            "id": "vamAJM"
-          },
-          "condition": "=user.phoneNumber != \"/cancel\"",
-          "elseActions": [
-            {
-              "$kind": "Microsoft.SendActivity",
-              "$designer": {
-                "id": "Q1f9Xq"
-              },
-              "activity": "${SendActivity_Q1f9Xq()}"
-            },
-            {
-              "$kind": "Microsoft.RepeatDialog",
-              "$designer": {
-                "id": "OfiXAl"
-              },
-              "activityProcessed": true
-            }
-          ]
-        },
-        {
-          "$kind": "Microsoft.TextInput",
-          "$designer": {
             "id": "dhawVp"
           },
           "disabled": false,
@@ -604,13 +568,50 @@
           ]
         },
         {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "mMkyEB"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_mMkyEB()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "property": "user.supportRequest"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "c35p9K"
+          },
+          "condition": "=user.supportRequest != \"/cancel\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "IpbRMg"
+              },
+              "activity": "${SendActivity_IpbRMg()}"
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "l5KT8n"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
           "$kind": "Microsoft.HttpRequest",
           "$designer": {
             "id": "dPccy2"
           },
           "resultProperty": "turn.results",
           "method": "GET",
-          "url": "https://script.google.com/macros/s/AKfycby4UqSbC380kG9KN5Vr6pFYlB4wNHv27QBSN7TbQ-Sa6ypuQp5AZvmFAnxvq6gBljtEBQ/exec?name=${user.name}&tel=${user.phoneNumber}&mail=${user.email}&text=${user.lastMessage}",
+          "url": "https://script.google.com/macros/s/AKfycbzqxNUxskYqSDsL6lm2othOstzbxXlR1-IFpb8Okyjgc-AqUtJ9idgZULrzJgChHkW9tQ/exec?name=${user.name}&text=${user.supportRequest}&mail=${user.email}",
           "responseType": "none",
           "headers": {}
         },
@@ -1096,6 +1097,81 @@
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "jpCVLA"
+          },
+          "property": "user.onProcess",
+          "value": " 0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "jJjR9k",
+        "name": "Menu"
+      },
+      "intent": "Menu",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "wzxHsr"
+          },
+          "activity": "${SendActivity_wzxHsr()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "dOesQ4"
+          },
+          "property": "user.onProcess",
+          "value": " 0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "nmIK8j",
+        "name": "MenuSolutions"
+      },
+      "intent": "MenuSolutions",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "uGAIee"
+          },
+          "activity": "${SendActivity_uGAIee()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "78vJRh"
+          },
+          "property": "user.onProcess",
+          "value": " 0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "N3bGgV",
+        "name": "MenuSupport"
+      },
+      "intent": "MenuSupport",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "MPN9LR"
+          },
+          "activity": "${SendActivity_MPN9LR()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "tZFCWZ"
           },
           "property": "user.onProcess",
           "value": " 0"
