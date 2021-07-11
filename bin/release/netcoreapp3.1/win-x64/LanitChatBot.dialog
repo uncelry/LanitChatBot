@@ -508,6 +508,29 @@
           "property": "user.name"
         },
         {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "TIB57R"
+          },
+          "condition": "=user.name != \"/cancel\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "Tnpkp3"
+              },
+              "activity": "${SendActivity_Tnpkp3()}"
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "PYzMSk"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
           "$kind": "Microsoft.TextInput",
           "$designer": {
             "id": "kRhHNy"
@@ -519,6 +542,29 @@
           "unrecognizedPrompt": "",
           "prompt": "${TextInput_Prompt_kRhHNy()}",
           "property": "user.phoneNumber"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "vamAJM"
+          },
+          "condition": "=user.phoneNumber != \"/cancel\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "Q1f9Xq"
+              },
+              "activity": "${SendActivity_Q1f9Xq()}"
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "OfiXAl"
+              },
+              "activityProcessed": true
+            }
+          ]
         },
         {
           "$kind": "Microsoft.TextInput",
@@ -533,6 +579,29 @@
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
           "property": "user.email"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "cSfwL3"
+          },
+          "condition": "=user.email != \"/cancel\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "ldyHWL"
+              },
+              "activity": "${SendActivity_ldyHWL()}"
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "t8nEeQ"
+              },
+              "activityProcessed": true
+            }
+          ]
         },
         {
           "$kind": "Microsoft.HttpRequest",
@@ -1005,6 +1074,31 @@
           },
           "property": "user.Process",
           "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "JOrrVI",
+        "name": "Cancel"
+      },
+      "intent": "Cancel",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "I2wgzi"
+          },
+          "activity": "${SendActivity_I2wgzi()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "jpCVLA"
+          },
+          "property": "user.onProcess",
+          "value": " 0"
         }
       ]
     }
