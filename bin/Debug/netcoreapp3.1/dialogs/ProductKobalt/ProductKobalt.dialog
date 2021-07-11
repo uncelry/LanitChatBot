@@ -50,14 +50,14 @@
         {
           "$kind": "Microsoft.IfCondition",
           "$designer": {
-            "id": "IUDXpX"
+            "id": "v0tJEj"
           },
           "condition": "=user.onProcess != 0",
           "elseActions": [
             {
               "$kind": "Microsoft.SetProperty",
               "$designer": {
-                "id": "jRONaM"
+                "id": "KhBcNL"
               },
               "property": "user.onProcess",
               "value": "1"
@@ -65,7 +65,7 @@
             {
               "$kind": "Microsoft.BeginDialog",
               "$designer": {
-                "id": "hN3fgP"
+                "id": "BB5fMj"
               },
               "activityProcessed": false,
               "dialog": "LanitChatBot"
@@ -73,16 +73,31 @@
           ],
           "actions": [
             {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "HnqtVp"
+              },
+              "property": "user.lastMessage",
+              "value": "${turn.activity.text}"
+            },
+            {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "Itce86"
+                "id": "dTbOnk"
               },
-              "activity": "${SendActivity_Itce86()}"
+              "activity": "${SendActivity_dTbOnk()}"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "w5hltC"
+              },
+              "activity": "${SendActivity_w5hltC()}"
             },
             {
               "$kind": "Microsoft.SetProperty",
               "$designer": {
-                "id": "nwmqcr"
+                "id": "F1HUbg"
               },
               "property": "user.onProcess",
               "value": "0"

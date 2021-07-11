@@ -25,6 +25,27 @@
           "activity": "${SendActivity_hemOVV()}"
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "LD0sQo"
+          },
+          "activity": "${SendActivity_LD0sQo()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "0CxcnM"
+          },
+          "activity": "${SendActivity_0CxcnM()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "hV0S5D"
+          },
+          "activity": "${SendActivity_hV0S5D()}"
+        },
+        {
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "1kEbPu"
@@ -66,11 +87,26 @@
           ],
           "actions": [
             {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "GQyM5Q"
+              },
+              "property": "user.lastMessage",
+              "value": "${turn.activity.text}"
+            },
+            {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
                 "id": "CBFHv7"
               },
               "activity": "${SendActivity_CBFHv7()}"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "1n0Dc1"
+              },
+              "activity": "${SendActivity_1n0Dc1()}"
             },
             {
               "$kind": "Microsoft.SetProperty",

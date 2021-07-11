@@ -27,30 +27,23 @@
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "r4QUHb"
+            "id": "LD0sQo"
           },
-          "activity": "${SendActivity_r4QUHb()}"
+          "activity": "${SendActivity_LD0sQo()}"
         },
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "uNS7Wt"
+            "id": "0CxcnM"
           },
-          "activity": "${SendActivity_uNS7Wt()}"
+          "activity": "${SendActivity_0CxcnM()}"
         },
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "8BT9pF"
+            "id": "hV0S5D"
           },
-          "activity": "${SendActivity_8BT9pF()}"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "RTICTC"
-          },
-          "activity": "${SendActivity_RTICTC()}"
+          "activity": "${SendActivity_hV0S5D()}"
         },
         {
           "$kind": "Microsoft.SetProperty",
@@ -94,6 +87,14 @@
           ],
           "actions": [
             {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "GQyM5Q"
+              },
+              "property": "user.lastMessage",
+              "value": "${turn.activity.text}"
+            },
+            {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
                 "id": "CBFHv7"
@@ -103,9 +104,9 @@
             {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "NQ97Pl"
+                "id": "1n0Dc1"
               },
-              "activity": "${SendActivity_NQ97Pl()}"
+              "activity": "${SendActivity_1n0Dc1()}"
             },
             {
               "$kind": "Microsoft.SetProperty",
@@ -188,13 +189,6 @@
             "id": "hS18HE"
           },
           "activity": "${SendActivity_hS18HE()}"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "PKzZm0"
-          },
-          "activity": "${SendActivity_PKzZm0()}"
         },
         {
           "$kind": "Microsoft.SetProperty",

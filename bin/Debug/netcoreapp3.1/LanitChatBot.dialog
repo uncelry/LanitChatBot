@@ -15,42 +15,19 @@
       },
       "actions": [
         {
-          "$kind": "Microsoft.Foreach",
+          "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "iEA3Dz",
-            "name": "Loop: for each item"
+            "id": "C5kp5s"
           },
-          "itemsProperty": "turn.Activity.membersAdded",
-          "actions": [
-            {
-              "$kind": "Microsoft.IfCondition",
-              "$designer": {
-                "id": "OQJB7X",
-                "name": "Branch: if/else"
-              },
-              "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
-              "actions": [
-                {
-                  "$kind": "Microsoft.SetProperty",
-                  "$designer": {
-                    "id": "ywr80Q"
-                  },
-                  "property": "user.onProcess",
-                  "value": " 0"
-                },
-                {
-                  "$kind": "Microsoft.SendActivity",
-                  "$designer": {
-                    "id": "84l753",
-                    "name": "Send a response"
-                  },
-                  "activity": "${SendActivity_84l753()}"
-                }
-              ]
-            }
-          ],
-          "value": "dialog.foreach.value",
-          "index": "dialog.foreach.index"
+          "activity": "${SendActivity_C5kp5s()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "ANLJEf"
+          },
+          "property": "user.Process",
+          "value": "0"
         }
       ]
     },
@@ -63,9 +40,16 @@
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "kMjqz1"
+            "id": "dnJhlA"
           },
-          "activity": "${SendActivity_kMjqz1()}"
+          "activity": "${SendActivity_dnJhlA()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "64ILIb"
+          },
+          "activity": "${SendActivity_64ILIb()}"
         }
       ]
     },
@@ -445,6 +429,673 @@
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "4BKO1h"
+          },
+          "property": "user.onProcess",
+          "value": " 0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "8Z4evj",
+        "name": "CallMe"
+      },
+      "intent": "CallMe",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "fTkdVf"
+          },
+          "activity": "${SendActivity_fTkdVf()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "GSTCur"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "TDfy8v",
+        "name": "WriteMe"
+      },
+      "intent": "WriteMe",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "m3R55p"
+          },
+          "activity": "${SendActivity_m3R55p()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "eqqM0a"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "LHSmZ2",
+        "name": "RequestMe"
+      },
+      "intent": "RequestMe",
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "3dbDf3"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "prompt": "${TextInput_Prompt_3dbDf3()}",
+          "property": "user.name"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "TIB57R"
+          },
+          "condition": "=user.name != \"/cancel\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "Tnpkp3"
+              },
+              "activity": "${SendActivity_Tnpkp3()}"
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "PYzMSk"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "kRhHNy"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "prompt": "${TextInput_Prompt_kRhHNy()}",
+          "property": "user.phoneNumber"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "vamAJM"
+          },
+          "condition": "=user.phoneNumber != \"/cancel\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "Q1f9Xq"
+              },
+              "activity": "${SendActivity_Q1f9Xq()}"
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "OfiXAl"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "dhawVp"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_dhawVp()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "property": "user.email"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "cSfwL3"
+          },
+          "condition": "=user.email != \"/cancel\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "ldyHWL"
+              },
+              "activity": "${SendActivity_ldyHWL()}"
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "t8nEeQ"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "dPccy2"
+          },
+          "resultProperty": "turn.results",
+          "method": "GET",
+          "url": "https://script.google.com/macros/s/AKfycby4UqSbC380kG9KN5Vr6pFYlB4wNHv27QBSN7TbQ-Sa6ypuQp5AZvmFAnxvq6gBljtEBQ/exec?name=${user.name}&tel=${user.phoneNumber}&mail=${user.email}&text=${user.lastMessage}",
+          "responseType": "none",
+          "headers": {}
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "iIYfeE"
+          },
+          "activity": "${SendActivity_iIYfeE()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "dhcWN2"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "nq96j3",
+        "name": "DIBLanit"
+      },
+      "intent": "DIBLanit",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "G4r3oH"
+          },
+          "activity": "${SendActivity_G4r3oH()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "iK3gAf"
+          },
+          "activity": "${SendActivity_iK3gAf()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "2XxS6w"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ],
+      "condition": "=#DIBLanit.Score >= 0.6"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "kV1i5f",
+        "name": "Offers"
+      },
+      "intent": "Offers",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "kAN57r"
+          },
+          "activity": "${SendActivity_kAN57r()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "w9E3tZ"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ],
+      "condition": "=#Offers.Score >= 0.6"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "w2YXE6",
+        "name": "SysIB"
+      },
+      "intent": "SysIB",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "ZPKkWU"
+          },
+          "activity": "${SendActivity_ZPKkWU()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "68GJKX"
+          },
+          "activity": "${SendActivity_68GJKX()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "1lHRsE"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ],
+      "condition": "=#SysIB.Score >= 0.6"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "nmz2pB",
+        "name": "Audit"
+      },
+      "intent": "Audit",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "EbD5FX"
+          },
+          "activity": "${SendActivity_EbD5FX()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "ztLK3b"
+          },
+          "activity": "${SendActivity_ztLK3b()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "yPKQKr"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ],
+      "condition": "=#Audit.Score >= 0.6"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "DCq0IM",
+        "name": "GIS"
+      },
+      "intent": "GIS",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "8AGjzf"
+          },
+          "activity": "${SendActivity_8AGjzf()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "rCXE6P"
+          },
+          "activity": "${SendActivity_rCXE6P()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "jeTcey"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ],
+      "condition": "=#GIS.Score >= 0.6"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "zh48Cb",
+        "name": "KII"
+      },
+      "intent": "KII",
+      "condition": "=#KII.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "jfxeUq"
+          },
+          "activity": "${SendActivity_jfxeUq()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "dSIvzR"
+          },
+          "activity": "${SendActivity_dSIvzR()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "QNWJvp"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "hkuuZ0",
+        "name": "PDn"
+      },
+      "intent": "PDn",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "BKyfZZ"
+          },
+          "activity": "${SendActivity_BKyfZZ()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "awmtKe"
+          },
+          "activity": "${SendActivity_awmtKe()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "wDVAaJ"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ],
+      "condition": "=#PDn.Score >= 0.6"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "pDjwTl",
+        "name": "SUIB"
+      },
+      "intent": "SUIB",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "lmLDmm"
+          },
+          "activity": "${SendActivity_lmLDmm()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "pYhiqV"
+          },
+          "activity": "${SendActivity_pYhiqV()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "pIEiQl"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ],
+      "condition": "=#SUIB.Score >= 0.6"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "5f31LC",
+        "name": "Maintenance"
+      },
+      "intent": "Maintenance",
+      "condition": "=#Maintenance.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Hegkpb"
+          },
+          "activity": "${SendActivity_Hegkpb()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "54J4dV"
+          },
+          "activity": "${SendActivity_54J4dV()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "incmEB"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "SOg5Rd",
+        "name": "HowWeWork"
+      },
+      "intent": "HowWeWork",
+      "condition": "=#HowWeWork.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "926lWr"
+          },
+          "activity": "${SendActivity_926lWr()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "7z2JJE"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "MtvxYQ",
+        "name": "Agreement"
+      },
+      "intent": "Agreement",
+      "condition": "=#Agreement.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Dzij7e"
+          },
+          "activity": "${SendActivity_Dzij7e()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "t1OurQ"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "2a4KX6",
+        "name": "Team"
+      },
+      "intent": "Team",
+      "condition": "=#Team.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "CsMDUd"
+          },
+          "activity": "${SendActivity_CsMDUd()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "OAHxdM"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "WyifbV",
+        "name": "HaveLicense"
+      },
+      "intent": "HaveLicense",
+      "condition": "=#HaveLicense.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "2GnYiy"
+          },
+          "activity": "${SendActivity_2GnYiy()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "xSaJk1"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "zRY7IN",
+        "name": "SupportOnGo"
+      },
+      "intent": "SupportOnGo",
+      "condition": "=#SupportOnGo.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "XosNvx"
+          },
+          "activity": "${SendActivity_XosNvx()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "pmkxe4"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "J6vId2",
+        "name": "RegionalClient"
+      },
+      "intent": "RegionalClient",
+      "condition": "=#RegionalClient.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "eOxM5A"
+          },
+          "activity": "${SendActivity_eOxM5A()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "PE9pwB"
+          },
+          "property": "user.Process",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "JOrrVI",
+        "name": "Cancel"
+      },
+      "intent": "Cancel",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "I2wgzi"
+          },
+          "activity": "${SendActivity_I2wgzi()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "jpCVLA"
           },
           "property": "user.onProcess",
           "value": " 0"

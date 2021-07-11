@@ -2,12 +2,12 @@
 
 # SendActivity_hemOVV()
 [Activity
-    Text = "Астер" ведет контроль местоположения сотрудников, и помогает увеличить безопасность работников и предотвратить несчастные случаи на производстве, например: 
+    Text = "Астер" - это программно-аппаратный комлекс, который ведет контроль местоположения сотрудников, и помогает увеличить безопасность работников и предотвратить несчастные случаи на производстве, например:
 ]
 
 # SendActivity_CBFHv7()
 [Activity
-    Text = Извините, не понял вас. Попробуйте переформулировать свой вопрос - оставьте только ключевые слова. \n\nЕсли это не поможет, вы можете задать свой вопрос по телефону +7 (495) 909-21-65 АСТЕР
+    Text = Извините, не понял вас. Попробуйте переформулировать свой вопрос - оставьте только ключевые слова.
 ]
 
 # SendActivity_OqH4lL()
@@ -17,7 +17,7 @@
 
 # SendActivity_qQYcr8()
 [Activity
-    Text = ${SendActivity_qQYcr8_text()}
+    Text = Оперативное оповещение: Оповещение об инцидетнах в режиме реального времени, Возможность отправки сообщений персоналу смены, Передача координат местоположения персонала дежурной смены на сервер, Отправка сведений об инциденте на email
 ]
 
 # SendActivity_KOXC62()
@@ -25,9 +25,6 @@
     Text = Единый центр мониторинга и безопасности: Передача информации со всех мобильных устройств в единый центр, Информация о заряде батареи каждого устройства, Отслеживание персонала на плане предприятия в режиме реального времени, Кнопка SOS на каждом мобильном устройстве
 ]
 
-# SendActivity_qQYcr8_text()
-- ```Оперативное оповещение: Оповещение об инцидетнах в режиме реального времени, Возможность отправки сообщений персоналу смены, Передача координат местоположения персонала дежурной смены на сервер, Отправка сведений об инциденте на email
-```
 # SendActivity_vgB7WR()
 [Activity
     Text = Сбор событий: Учет Bluetooth-меток, мобильных устройств и Wi-fi устройств, Формирование отчетов по режимам труда и отдыха, Получение детального маршрута движения персонала, Журналирование событий
@@ -123,60 +120,28 @@
     Text = Если вас заинтересовал этот продукт, и вы хотите узнать о нем больше - задайте мне вопрос о его функционале или преимуществах
 ]
 
-# SendActivity_NQ97Pl_attachment_9hAB0Q()
-- ```{
-  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-  "version": "1.0",
-  "type": "AdaptiveCard",
-  "body": [""],
-  "actions": [
-    {
-      "type": "Action.OpenUrl",
-      "url": "http://adaptivecards.io",
-      "title": "Позвоните нам"
-    }
-  ],
-  "backgroundImage": ""
-}```
-# SendActivity_NQ97Pl()
+
+# SendActivity_LD0sQo()
 [Activity
-    Attachments = ${json(SendActivity_NQ97Pl_attachment_9hAB0Q())} | ${json(SendActivity_NQ97Pl_attachment_6ha7Av())} | ${json(SendActivity_NQ97Pl_attachment_0EtU4z())} | ${json(SendActivity_NQ97Pl_attachment_rqvD7U())}
-    AttachmentLayout = list
+    Text = Инженер смены проихводит обход территории для проверка состояния оборудования дольше обычного. Как понять, в чем причина?
 ]
 
-# SendActivity_NQ97Pl_attachment_6ha7Av()
-> To learn more Adaptive Cards format, read the documentation at
-> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
-- ```{
-  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-  "version": "1.2",
-  "type": "AdaptiveCard",
-  "body": [],
-  "actions": [
-    {
-      "type": "Action.OpenUrl",
-      "url": "http://adaptivecards.io",
-      "title": "Напишите нам"
-    }
-  ]
-}```
-# SendActivity_NQ97Pl_attachment_0EtU4z()
-> To learn more Adaptive Cards format, read the documentation at
-> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
-- ```{
-  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-  "version": "1.2",
-  "type": "AdaptiveCard",
-  "body": [],
-  "actions": [
-    {
-      "type": "Action.OpenUrl",
-      "url": "http://adaptivecards.io",
-      "title": "Оставьте заявку"
-    }
-  ]
-}```
-# SendActivity_NQ97Pl_attachment_rqvD7U()
+# SendActivity_0CxcnM()
+[Activity
+    Text = На предприятии проводятся опасные работы. Как убедиться, что в опасной зоне нет работников?
+]
+
+# SendActivity_hV0S5D()
+[Activity
+    Text = На предприятии произошла авария. Как определить, кто из работников мог пострадать?
+]
+
+# SendActivity_1n0Dc1_attachment_xrWjKn()
 [HeroCard
-  buttons = ""
+  text = Если это не поможет, вы можете задать свой вопрос техподдержке позвонив по телефону, написав на почту или оставив заявку
+  buttons = Позвонить | Написать | Заявка
+]
+# SendActivity_1n0Dc1()
+[Activity
+    Attachments = ${json(SendActivity_1n0Dc1_attachment_xrWjKn())}
 ]
