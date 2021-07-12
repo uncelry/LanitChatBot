@@ -302,7 +302,7 @@
 # SendActivity_MPN9LR_attachment_svgxWX()
 [HeroCard
   text = Как вам удобнее обратиться в техподдержку?
-  buttons = ${cardActionTemplate( 'imBack',  'Позвонить', '/call')} | ${cardActionTemplate( 'imBack',  'Написать', '/request')} | ${cardActionTemplate( 'imBack',  'Сайт поддержки', 'САЙТ')} | ${cardActionTemplate( 'imBack',  'Назад', '/menu')}
+  buttons = ${cardActionTemplate( 'imBack',  'Позвонить', '/call')} | ${cardActionTemplate( 'imBack',  'Написать', '/request')} | ${cardActionTemplate( 'imBack',  'Назад', '/menu')}
 ]
 # SendActivity_MPN9LR()
 [Activity
@@ -315,6 +315,16 @@
 ]
 
 # SendActivity_IpbRMg()
+[Activity
+    Text = Заполнение заявки для техподдержки отменено \n\nЧтобы вернуться в меню, используйте команду /menu
+]
+
+# ChoiceInput_Prompt_6n8n35()
+[Activity
+    Text = Пожалуйста, выберите тему вашего обращения
+]
+
+# SendActivity_wE5BEj()
 [Activity
     Text = Заполнение заявки для техподдержки отменено \n\nЧтобы вернуться в меню, используйте команду /menu
 ]

@@ -3,14 +3,14 @@
         "ProductKobalt_en_us_lu": {
             "appId": "701105d3-5f43-4c84-a74b-b7083e4a04ab"
         },
-        "ProductAster_en_us_lu": {
-            "appId": "e9b92dc0-1b8a-4e97-ba9d-ecab7012240f"
-        },
         "ProductAvrora_en_us_lu": {
             "appId": "f4a7503a-1d39-422a-b0b4-3d2dfd7c50e7"
         },
         "LanitChatBot_en_us_lu": {
             "appId": "67183ea2-ea78-4851-b23a-73196b5e724c"
+        },
+        "ProductAster_en_us_lu": {
+            "appId": "e9b92dc0-1b8a-4e97-ba9d-ecab7012240f"
         },
         "ProductLogos_en_us_lu": {
             "appId": "86bb8679-95fa-4b15-92d4-175d36465618"

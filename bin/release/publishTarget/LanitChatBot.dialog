@@ -605,13 +605,79 @@
           ]
         },
         {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "xPq9ks"
+          },
+          "property": "conversation.support_re_array",
+          "value": [
+            "АСТЕР",
+            "АВРОРА",
+            "КОБАЛЬТ",
+            "ЛОГОС",
+            "Другая тема",
+            "Отмена"
+          ]
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "6n8n35"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_6n8n35()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.re",
+          "outputFormat": "value",
+          "style": "heroCard",
+          "choices": "=conversation.support_re_array",
+          "recognizerOptions": {
+            "recognizeOrdinals": true,
+            "recognizeNumbers": true
+          }
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "o8IUvS"
+          },
+          "condition": "=user.re != \"Отмена\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "wE5BEj"
+              },
+              "activity": "${SendActivity_wE5BEj()}"
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "2Z14V0"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
           "$kind": "Microsoft.HttpRequest",
           "$designer": {
             "id": "dPccy2"
           },
           "resultProperty": "turn.results",
           "method": "GET",
-          "url": "https://script.google.com/macros/s/AKfycbzqxNUxskYqSDsL6lm2othOstzbxXlR1-IFpb8Okyjgc-AqUtJ9idgZULrzJgChHkW9tQ/exec?name=${user.name}&text=${user.supportRequest}&mail=${user.email}",
+          "url": "https://script.google.com/macros/s/AKfycbwRBy25ntYXEX6PLeaARni0S3SXNShjpFZXf5ZEhzhqykg37ceDPKLYtjt7XXrxMxGftA/exec?name=${user.name}&text=${user.supportRequest}&mail=${user.email}&re=${user.re}",
           "responseType": "none",
           "headers": {}
         },
